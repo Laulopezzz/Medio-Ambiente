@@ -1,0 +1,42 @@
+/* === MODELO DE CAJA aplicado al medio ambiente === */
+.caja-principal {
+    background-color: #f1f8e9;
+    padding: 20px;             /* espacio interno */
+    margin: 20px auto;         /* espacio exterior */
+    border: 2px solid #aed581; /* borde verde */
+    box-shadow: 2px 2px 8px #ccc;
+    width: 90%;
+    border-radius: 8px;
+}
+
+/* Posición relativa aplicada al aside (contenido relacionado al medio ambiente) */
+.dato-curioso {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 300px;
+    background-color: #e0f2f1;
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px dashed #4caf50;
+    box-shadow: 1px 1px 5px #bbb;
+}
+
+/* Menú fijo con modelo de caja */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #c8e6c9;
+    height: 50px;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #999;
+}
+
+/* Para que el contenido no quede tapado por el menú */
+body {
+    margin-top: 70px;
+}
